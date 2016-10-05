@@ -12,3 +12,5 @@ If your heating is put into holiday mode the schedule will be ignored completely
 Relevant ids can be obtained via: curl 'https://api-prod.bgchprod.info/omnia/nodes' -X GET -H 'X-Omnia-Access-Token: XXXXXX' -H 'X-AlertMe-Client: Hive Web Dashboard' -H 'Accept: application/vnd.alertme.zoo-6.4+json' -H 'Content-Type: application/json'
 
 Access token retrieved via: curl -X POST -d "username=USERNAME&password=PASSWORD&caller=web" https://api-prod.bgchprod.info:8443/api/login
+
+Can run the script via a cron job (to execute 5 minutes is about right).
